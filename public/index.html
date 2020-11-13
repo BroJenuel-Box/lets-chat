@@ -16,22 +16,19 @@
 	<div class="join-container card bg-light">
 		<header class="join-header">
 			<h1><i class='bx bx-chat'></i> Let's Chat</h1>
+			<small>Lets Chat is a web app that I made where a user can chat with another person or more than one person, depending on the room selected.</small><br>
+			<a href="https://jenuelganawed.ml/"><i class='bx bxs-user-detail'></i> Jenuel Ganawed</a>
 		</header>
-		<main class="join-main">
+		<main class="join-main" style="margin-top: 20px;">
 			<form action="chat.html">
 				<div class="input-group mb-3" >
 					<span class="input-group-text" id="basic-addon1"><i class='bx bx-user' ></i></span>
 					<input class="form-control" type="text" name="username" id="username" placeholder="Enter name" required aria-label="Username" aria-describedby="basic-addon1" autocomplete="off">
 				</div>
-				<small>Select Room</small>
-				<select name="room" id="room" class="form-select" aria-label="Default select example">
-					<option value="JavaScript">JavaScript</option>
-					<option value="Python">Python</option>
-					<option value="PHP">PHP</option>
-					<option value="C#">C#</option>
-					<option value="Ruby">Ruby</option>
-					<option value="Java">Java</option>
-				</select>
+				<div class="input-group mb-3" >
+					<span class="input-group-text" id="basic-addon1"><i class='bx bx-home-alt'></i></span>
+					<input class="form-control" type="text" name="room" id="room" placeholder="Room Name" required aria-label="Username" aria-describedby="basic-addon1" autocomplete="off">
+				</div>
 				<button type="submit" class="btn btn-primary btn-outline float-right mt-3">Join Chat</button>
 			</form>
 		</main>

@@ -3,4 +3,7 @@ Lets Chat is a web app that I made where a user can chat with another person or 
 
 ### [view website](https://lets-chat-app-by-jenuel.herokuapp.com/)
 
-preview
+## Preview  
+![][logo]
+
+[logo]: https://github.com/BroJenuel-Youtube/lets-chat/blob/main/images/screen.png?raw=true

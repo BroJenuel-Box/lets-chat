@@ -1,18 +1,29 @@
 * {
     box-sizing: inherit;
 }
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
+
 p {
     margin: 0;
 }
+
 .chat-container {
     width: 800px;
 }
+
+.main-content-chat {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin-top: 80px;
+}
+
 .chat-form-container {
     padding: 20px;
     max-height: 530px;
@@ -56,4 +67,45 @@ p {
     border-radius: 1.125rem 1.125rem 0 1.125rem;
     background: #333;
     color: white;
+}
+
+@media only screen and (max-width: 450px) {
+    .main-content-chat {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    .chat-main {
+        display: none;
+    }
+    .chat-form-container {
+        padding: 10px;
+        max-height: 100vh;
+        width: 90vw;
+        height: 90vh !important;
+    }
+    .chat-messages {
+        position: fixed;
+        max-height: 77vh;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    .mobile-bottom-input {
+        position: fixed;
+        bottom: 10px;
+        width: 95vw;
+    }
+    .navbar {
+        display: none;
+    }
+    .navbar .btn {
+        padding: 5px;
+    }
+    .navbar .navbar-brand span {
+        display: none;
+    }
+    .card {
+        border: none;
+    }
 }
